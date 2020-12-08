@@ -1,6 +1,16 @@
+#Check version: 
+#http://nginx.org/en/download.html
+#https://www.openssl.org/source/
+#https://sourceforge.net/projects/libpng/files/libpng16/1.6.37/
+#https://luajit.org/download.html
+#https://github.com/vision5/ngx_devel_kit/releases
+#https://github.com/openresty/lua-nginx-module/releases/
+#https://github.com/SpiderLabs/owasp-modsecurity-crs/releases
+
+
 FROM alpine:latest
 
-MAINTAINER Troy Kelly <troy.kelly@really.ai>
+MAINTAINER Thao Pham <ThaoPT@NextSec.vn>
 
 ENV VERSION=1.15.7
 ENV OPENSSL_VERSION=1.1.1a
@@ -11,6 +21,17 @@ ENV NGXLUA_VERSION=0.10.13
 ENV MODSECURITY=3
 ENV OWASPCRS_VERSION=3.0.0
 ENV PYTHON_VERSION=3.7.1
+
+
+#ENV VERSION=1.18.0
+#ENV OPENSSL_VERSION=1.1.1h
+#ENV LIBPNG_VERSION=1.6.37
+#ENV LUAJIT_VERSION=2.0.5
+#ENV NGXDEVELKIT_VERSION=0.3.1
+#ENV NGXLUA_VERSION=0.10.19
+#ENV MODSECURITY=3.2.0
+#ENV OWASPCRS_VERSION=3.2.0
+#ENV PYTHON_VERSION=3.7.1
 
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE
